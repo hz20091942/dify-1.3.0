@@ -62,8 +62,8 @@ const OPTION_MAP = {
     background-color: ${primaryColor} !important;
   }
   #dify-chatbot-bubble-window {
-    width: 24rem !important;
-    height: 40rem !important;
+    width: 34rem !important;
+    height: 60rem !important;
   }
 </style>`,
   },

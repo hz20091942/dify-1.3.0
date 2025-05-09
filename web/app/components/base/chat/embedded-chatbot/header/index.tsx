@@ -76,7 +76,7 @@ const Header: FC<IHeaderProps> = ({
 
   if (!isMobile) {
     return (
-      <div className='flex h-14 shrink-0 items-center justify-end p-3'>
+      <div className='flex h-10 shrink-0 items-center justify-end p-3'>
         <div className='flex items-center gap-1'>
           {/* powered by */}
           <div className='shrink-0'>
@@ -131,7 +131,7 @@ const Header: FC<IHeaderProps> = ({
 
   return (
     <div
-      className={cn('flex h-14 shrink-0 items-center justify-between rounded-t-2xl px-3')}
+      className={cn('flex h-10 shrink-0 items-center justify-between rounded-t-2xl px-3')}
       style={Object.assign({}, CssTransform(theme?.backgroundHeaderColorStyle ?? ''), CssTransform(theme?.headerBorderBottomStyle ?? '')) }
     >
       <div className="flex grow items-center space-x-3">

@@ -23,6 +23,7 @@ import cn from '@/utils/classnames'
 import Textarea from 'react-textarea-autosize'
 import Button from '../../button'
 import { useChatContext } from './context'
+import '@/app/components/base/chat/embedded-chatbot/embedded-chatbot.scss'
 
 type QuestionProps = {
   item: ChatItem
@@ -109,7 +110,7 @@ const Question: FC<QuestionProps> = ({
             )
           }
           { !isEditing
-            ? <Markdown content={content} />
+            ? <Markdown content={content} className="embedded-chatbot-question" />
             : <div className="
                 flex flex-col gap-2 rounded-xl
                 border border-components-chat-input-border bg-components-panel-bg-blur p-[9px] shadow-md
@@ -140,7 +141,7 @@ const Question: FC<QuestionProps> = ({
         </div>
         <div className='mt-1 h-[18px]' />
       </div>
-      <div className='h-10 w-10 shrink-0'>
+      <div className='h-6 w-6 shrink-0'>
         {
           questionIcon || (
             <div className='h-full w-full rounded-full border-[0.5px] border-black/5'>
